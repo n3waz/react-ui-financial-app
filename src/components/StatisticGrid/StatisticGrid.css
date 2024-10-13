@@ -1,0 +1,64 @@
+.statistic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.statistic-grid .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.statistic-grid .box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.statistic-grid .statistics .rounded-icon-btn {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.statistic-grid .contact-history-header {
+    align-items: flex-start;
+}
+
+.statistic-grid .profile-container {
+    box-shadow: var(--shadow-1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.statistic-grid .contact-history .user {
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.statistic-grid .contact-history .user .profile {
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+.statistic-grid .contact-history .user .muted {
+    font-size: 12px;
+}
+
+/* Responsive code: */
+@media only screen and (max-width:1180px) {
+    .statistic-grid {
+        grid-template-columns: 100%;
+    }
+}

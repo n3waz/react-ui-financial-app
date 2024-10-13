@@ -1,0 +1,53 @@
+.transactions {
+    margin-top: 40px;
+    box-shadow: var(--shadow-1);
+    border-radius: 20px;
+}
+
+.transactions .title {
+    padding: 20px;
+}
+
+.transactions table {
+    width: 100%;
+    font-size: 12px;
+}
+
+.transactions table td {
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.transactions table .profile {
+    display: inline-block;
+}
+
+.transactions table .Sucess {
+    color: var(--color-sucess);
+    background: rgba(var(--color-sucess-rgb), 0.2);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.transactions table .Failed {
+    color: var(--color-danger);
+    background: rgba(var(--color-danger-rgb), 0.2);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.transactions table .Processing {
+    color: var(--color-warning);
+    background: rgba(var(--color-warning-rgb), 0.2);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* Responsive Code */
+@media only screen and (max-width: 600px) {
+    .transactions table .minimize {
+        display: none;
+    }
+}

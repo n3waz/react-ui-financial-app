@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary: #157bf8;
+    --primary-rgb: 21,123, 248;
+    --text-color: #222222;
+    --text-muted: rgb(153, 171, 195);
+    --text-muted-02: rgb(110, 113, 129);
+    --transition: 0.4s ease-in-out;
+    --border: rgb(238, 240, 247);
+    --color-white: #ffffff;
+    --color-dark: #222222;
+    --color-sucess: #33c648;
+    --color-sucess-rgb: 51, 198, 72;
+    --color-danger: #fc605b;
+    --color-warning: #ffbb55;
+    --color-warning-rgb: 255, 187, 85;
+    --ui-base: #ffffff;
+    --ui-secondary: #f7f7f7;
+    --shadow-1: 0px 42px 20px -5px rgba(0, 0, 0, 0.15);
+    --shadow-2: 0 1rem 2rem hsl(0 0% 0% / 20%);
+    --shadow-3: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+}
+[data-theme="dark"] {
+    --ui-base: #14141a;
+    --ui-secondary: #292932;
+    --text-color: #ffffff;
+    --border: #252424;
+    --shadow-1: 0px 42px 20px -5px rgba(0, 0, 0, 0.55);
+    --shadow-2: 1rem 2rem hsla(0, 0%, 0%, 0.5);
+    --shadow-3: 0 2.5rem -2rem hsla(210, 33%, 2%, 0.7);
+}
+
+/*General Styles*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html, body {
+    height: 100vh; /*Viewport Height*/
+    font-family: "Roboto", sans-serif;
+    background: var(--ui-base);
+    overflow: hidden;
+    overflow-y: auto;
+    color: var(--text-color);
+}
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+h2 {
+    font-weight: 500;
+    font-size: 17px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 15;
+}
+h4 {
+    font-weight: 400;
+}
+img {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+}
+button {
+    background: transparent;
+    cursor: pointer;
+}
+input {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+    color: var(--text-color);
+}
+input::placeholder{
+    color: var(--text-color);
+    opacity: 1;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.muted {
+    color: var(--text-muted);
+}
+
+.sucess {
+    color: var(--color-sucess);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.warning {
+    color: var(--color-warning);
+}
+
+.profile {
+    width: 2.8rem;
+    height: 2.8rem;
+    min-width: 2.8rem;
+    min-height: 2.8rem;
+    max-width: 2.8rem;
+    max-height: 2.8rem;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.icon-wrapper {
+    padding: 10px;
+}
+
+.rounded-icon-btn {
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ui-secondary);
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.rounded-icon-btn .icon {
+    width: 18px;
+    height: 18px;
+}
+
+.btn {
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    background: var(--ui-secondary);
+    display: inline-flex;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--color-white);
+}

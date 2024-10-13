@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    margin-right: auto;
+    display: none;
+}
+
+.navbar .search-bar,
+.navbar .user {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-bar {
+    border: solid 1px var(--border);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.navbar .user {
+    gap: 10px;
+}
+
+.navbar .menu-btn {
+    display: none;
+}
+
+/* NavBar Responsive Code: */
+@media only screen and (max-width:1180px) {
+    .navbar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 90;
+        background: var(--ui-base);
+    }
+    
+    .navbar .logo,
+    .navbar .menu-btn {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .navbar .search-bar {
+        display: none;
+    }
+}

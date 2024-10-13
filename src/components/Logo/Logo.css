@@ -1,0 +1,6 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Inter", "sans-serif";
+}

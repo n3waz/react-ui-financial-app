@@ -1,0 +1,119 @@
+.sidebar {
+    width: 250px;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    transition: var(--transition);
+    padding-right: 20px;
+    border-right: solid 2.5px var(--border);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: var(--ui-base);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .logo {
+    padding: 20px;
+}
+
+.sidebar .tabs {
+    flex: 1;
+    margin: 20px 0;
+}
+
+.sidebar .tab {
+    padding-left: 20px;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar .tab.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background: var(--primary);
+    border-radius: 0 20px 20px 0;
+}
+
+.sidebar .tab .item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+    color: var(--text-muted-02);
+    border-radius: 21px;
+    transition: var(--transition);
+}
+
+.sidebar .tab .item:hover {
+    background: var(--ui-secondary);
+    color: var(--text-color);
+    transform: translateX(10px);
+}
+
+.sidebar .tab.active .item {
+    background: rgba(--primary-rgb, 0.1);
+    color: var(--primary);
+}
+
+.sidebar .tab .item .count {
+    background: var(--primary);
+    padding: 5px 8px;
+    border-radius: 50px;
+    color: var(--color-white);
+    margin-left: auto;
+    font-size: 12px;
+}
+
+.sidebar .bottom {
+    padding: 20px;
+}
+
+.sidebar .theme-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+.sidebar .item-tabs {
+    margin: 20px 0;
+}
+
+.sidebar .item-tabs .item-tab {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar .user {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* SideBar Responsive code: */
+@media only screen and (max-width:1180px) {
+    .sidebar {
+        width: 100%;
+        max-width: 320px;
+        left: -370px;
+    }
+    .sidebar.open {
+        left: 0;
+    }
+}

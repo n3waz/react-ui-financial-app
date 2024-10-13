@@ -1,0 +1,63 @@
+.send-money {
+    margin-top: 60px;
+}
+
+.send-money .balance {
+    padding: 20px;
+    box-shadow: var(--shadow-1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.send-money .add-fund-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-2);
+    background: var(--ui-base);
+    color: var(--text-color);
+}
+
+.send-money .balance .icon {
+    width: 30px;
+}
+
+.send-money .amount {
+    padding: 10px 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-2);
+    background: var(--ui-base);
+}
+
+.send-money .amount .user {
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.send-money .price-input {
+    justify-content: flex-start;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.send-money .receiver {
+    margin-top: 40px;
+    padding: 10px 20px;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.send-money .receiver .rounded-icon-btn {
+    margin-left: auto;
+    background: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary);
+}
+
+.send-money .send-money-btn {
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+}

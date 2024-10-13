@@ -1,0 +1,48 @@
+.quick-transfer {
+    padding: 20px 30px;
+    border: solid 1.5px var(--border);
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.quick-transfer .avaliable-balance {
+    margin-bottom: 40px;
+}
+
+.quick-transfer .transfer-input {
+    border: solid 1.5px var(--primary);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.quick-transfer .transfer-input > .muted {
+    margin-bottom: 10px;
+}
+
+.quick-transfer .action-buttons {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.quick-transfer .rounded-icon-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    border: solid 1.5px var(--border);
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.quick-transfer .item {
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.quick-transfer .item:hover,
+.quick-transfer .item:hover .muted {
+    color: var(--primary);
+}
